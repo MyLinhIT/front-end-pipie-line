@@ -21,7 +21,7 @@ pipeline{
           
           withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'heroku-git-login',
            usernameVariable: 'admin', passwordVariable: 'admin']]) {
-                bat "git push -f https://git.heroku.com/kubo-front-end-ci-cd.git HEAD:master"
+                bat "git push -f https://git.heroku.com/front-end-pipeline.git HEAD:master"
           }
           }
           }
